@@ -3,6 +3,7 @@
 import os
 import sys
 
+print os.getcwd()
 
 def main():
     """Run administrative tasks."""
