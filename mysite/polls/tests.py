@@ -5,9 +5,9 @@ from django.utils import timezone
 
 from .models import Question
 
-# Create your tests here.
+# Create your tests here. 
 
-class QuestionModelTests(TestCase):
+class QuestionModelTests(TestCase): ## three default test cases
     def test_was_published_recently_with_future_question(self):
         #was published recently returns False for questions whose pub_date is in the future.
         time = timezone.now() + datetime.timedelta(days=30)
