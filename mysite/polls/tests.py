@@ -88,7 +88,7 @@ class QuestionDetailViewTests(TestCase):
         future_question = create_question(question_text='Future question.', days=5)
         url = reverse('polls:detail', args=(future_question.id,))
         response = self.client.get(url)
-        self.assertEqual(response.status_code, 200) ##broken test
+        self.assertEqual(response.status_code, 404) ##broken test
 
     def test_past_question(self):
         # the detail view of a question with a pub_date in the past displays the question's text
