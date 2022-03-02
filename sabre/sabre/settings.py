@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# basic elo functionality
+ELO_START_VALUE = 1000
+ELO_FACTOR_K = 30
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
