@@ -23,3 +23,13 @@ def signup(request, question_id):
         password = request.POST['password']
         email = request.POST['email']
         return HttpResponseRedirect(reverse('index'))
+
+    def login():
+        username = request.POST['username']
+        password = request.POST['password']
+        return HttpResponseRedirect(reverse('index'))
+
+    def logout():
+        return HttpResponseRedirect(reverse('index'))
+
+    ## finish this
