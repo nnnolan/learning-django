@@ -17,3 +17,9 @@ def recent_matches(request, question_id):
 
 def signup(request, question_id):
     return HttpResponse("You're looking at the signup.")
+
+    def registration():
+        username = request.POST['username']
+        password = request.POST['password']
+        email = request.POST['email']
+        return HttpResponseRedirect(reverse('index'))
