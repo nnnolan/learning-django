@@ -46,4 +46,4 @@ class EloRated(models.Model):
 # def logout():
 #     return HttpResponseRedirect(reverse('index'))
 
-#broken code
+#broken code 
