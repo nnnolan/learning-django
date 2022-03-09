@@ -16,5 +16,5 @@ def recent_matches(request, question_id):
     return HttpResponse(response)
 
 def signup(request, question_id):
-    return HttpResponse(<div><h1>hello world</div></h1>)
+    return HttpResponse("I need to fix this.") #broken code
 
